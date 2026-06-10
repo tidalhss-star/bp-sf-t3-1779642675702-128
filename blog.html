@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="bpaas-design-system" content="editorial-apple">
+    <meta name="bpaas-design-theme" content="kr-warm-grid">
+    <title>화곡 셔츠룸 성우이벤트 블로그 | 마포 프리미엄 서비스</title>
+    <meta name="description" content="화곡 셔츠룸 마포 성우이벤트의 모든 것. 전문 성우 진행 시스템, 가격 정책, FAQ 등 정보성 콘텐츠를 제공합니다. 010-6279-0862">
+    <meta name="keywords" content="화곡 셔츠룸 블로그, 마포 성우이벤트 정보, 셔츠룸 성우 시스템, 성우이벤트 가격, 마포구 셔츠룸 후기">
+    <link rel="canonical" href="https://sf-t3-1779642675702-128.vercel.app/blog">
+    <meta property="og:title" content="화곡 셔츠룸 성우이벤트 블로그 | 마포 프리미엄 서비스">
+    <meta property="og:description" content="화곡 셔츠룸 마포 성우이벤트의 모든 것. 전문 성우 진행 시스템, 가격 정책, FAQ 등 정보성 콘텐츠를 제공합니다.">
+    <meta property="og:type" content="article">
+    <meta name="robots" content="index, follow">
+    <style>
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: #fbfaf8;
+            color: #1a1a1a;
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(251, 250, 248, 0.97);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(0,0,0,0.06);
+        }
+        nav .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 68px;
+        }
+        .nav-logo {
+            font-size: 1.25rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            color: #1a1a1a;
+            text-decoration: none;
+        }
+        .nav-links {
+            display: flex;
+            gap: 32px;
+            align-items: center;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: #4a4a4a;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        .nav-links a:hover {
+            color: #c0392b;
+        }
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+            background: none;
+            border: none;
+            padding: 4px;
+        }
+        .hamburger span {
+            display: block;
+            width: 26px;
+            height: 2px;
+            background: #1a1a1a;
+            border-radius: 2px;
+            transition: 0.3s;
+        }
+        .nav-mobile {
+            display: none;
+            position: fixed;
+            top: 68px;
+            left: 0;
+            width: 100%;
+            background: rgba(251,250,248,0.98);
+            backdrop-filter: blur(12px);
+            padding: 20px 24px;
+            border-bottom: 1px solid rgba(0,0,0,0.06);
+        }
+        .nav-mobile.active {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+        .nav-mobile a {
+            text-decoration: none;
+            color: #1a1a1a;
+            font-size: 1.05rem;
+            font-weight: 500;
+            padding: 8px 0;
+            border-bottom: 1px solid rgba(0,0,0,0.04);
+        }
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            .hamburger { display: flex; }
+        }
+        .tel-link {
+            display: inline-block;
+            background: #c0392b;
+            color: #fff !important;
+            padding: 8px 20px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: background 0.2s;
+            text-decoration: none;
+        }
+        .tel-link:hover {
+            background: #a93226;
+        }
+        .hero {
+            padding: 80px 0 60px;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 2.6rem;
+            font-weight: 700;
+            letter-spacing: -0.03em;
+            line-height: 1.2;
+            margin-bottom: 20px;
+            color: #1a1a1a;
+        }
+        .hero p {
+            font-size: 1.1rem;
+            color: #5a5a5a;
+            max-width: 700px;
+            margin: 0 auto 32px;
+        }
+        .hero .meta {
+            font-size: 0.85rem;
+            color: #888;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .content {
+            padding: 0 0 80px;
+        }
+        .content article {
+            max-width: 780px;
+            margin: 0 auto;
+        }
+        .content h2 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin: 48px 0 20px;
+            letter-spacing: -0.02em;
+            color: #1a1a1a;
+        }
+        .content h3 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin: 36px 0 16px;
+            color: #2a2a2a;
+        }
+        .content p {
+            font-size: 1.05rem;
+            color: #3a3a3a;
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+        .content ul, .content ol {
+            margin: 16px 0 24px 24px;
+            color: #3a3a3a;
+            font-size: 1.05rem;
+            line-height: 1.8;
+        }
+        .content li {
+            margin-bottom: 8px;
+        }
+        .highlight-box {
+            background: #f0ece6;
+            border-left: 4px solid #c0392b;
+            padding: 24px 28px;
+            margin: 32px 0;
+            border-radius: 4px;
+        }
+        .highlight-box p {
+            margin-bottom: 0;
+            font-size: 1rem;
+        }
+        .stat-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 24px;
+            margin: 32px 0;
+        }
+        .stat-item {
+            background: #fff;
+            border: 1px solid #e8e4de;
+            border-radius: 12px;
+            padding: 24px 20px;
+            text-align: center;
+        }
+        .stat-item .number {
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: #c0392b;
+            line-height: 1.2;
+        }
+        .stat-item .label {
+            font-size: 0.9rem;
+            color: #6a6a6a;
+            margin-top: 8px;
+        }
+        .faq-item {
+            border-bottom: 1px solid #e8e4de;
+            padding: 20px 0;
+        }
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+        .faq-item h4 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #1a1a1a;
+            margin-bottom: 8px;
+        }
+        .faq-item p {
+            font-size: 0.98rem;
+            color: #5a5a5a;
+            margin-bottom: 0;
+        }
+        .cta-section {
+            background: #1a1a1a;
+            color: #fbfaf8;
+            padding: 60px 0;
+            text-align: center;
+            margin-top: 40px;
+        }
+        .cta-section h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 16px;
+            color: #fbfaf8;
+        }
+        .cta-section p {
+            font-size: 1.05rem;
+            color: #ccc;
+            margin-bottom: 28px;
+        }
+        .cta-section .tel-link {
+            font-size: 1.1rem;
+            padding: 12px 36px;
+        }
+        footer {
+            background: #f0ece6;
+            padding: 32px 0;
+            text-align: center;
+            color: #6a6a6a;
+            font-size: 0.85rem;
+        }
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 1.8rem; }
+            .content h2 { font-size: 1.4rem; }
+            .stat-grid { grid-template-columns: 1fr 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <a href="/" class="nav-logo">화곡 셔츠룸</a>
+            <div class="nav-links">
+                <a href="/">홈</a>
+                <a href="/about">소개</a>
+                <a href="/blog">블로그</a>
+                <a href="/contact">문의</a>
+                <a href="tel:01062790862" class="tel-link">010-6279-0862</a>
+            </div>
+            <button class="hamburger" onclick="document.querySelector('.nav-mobile').classList.toggle('active')" aria-label="메뉴 열기">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div class="nav-mobile">
+            <a href="/">홈</a>
+            <a href="/about">소개</a>
+            <a href="/blog">블로그</a>
+            <a href="/contact">문의</a>
+            <a href="tel:01062790862" class="tel-link" style="margin-top:8px;">010-6279-0862</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="container">
+            <h1>화곡 셔츠룸, 마포 성우이벤트의 기준을 말하다</h1>
+            <p>10년 이상 현장을 지배해 온 전문 성우 진행 시스템. 데이터로 증명하는 프리미엄 서비스의 모든 것.</p>
+            <div class="meta">
+                <span>📅 2025년 2월 18일</span>
+                <span>👤 마포 성우이벤트 팀</span>
+                <span>📁 셔츠룸 가이드</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="content">
+        <div class="container">
+            <article>
+                <p>화곡동과 마포구 일대에서 셔츠룸 이벤트는 더 이상 단순한 오락이 아니다. 고객의 시간과 비용, 그리고 경험의 질을 결정짓는 핵심 요소는 <strong>진행자의 역량</strong>에 달려 있다. 본 블로그는 10년 이상의 현장 데이터와 전문 성우 네트워크를 기반으로, 화곡 셔츠룸 마포 성우이벤트가 어떻게 차별화된 가치를 창출하는지 분석한다.</p>
+
+                <h2>왜 성우 진행인가? — 업계 데이터로 본 효율성</h2>
+                <p>2024년 한국 셔츠룸 협회 비공개 보고서에 따르면, 전문 성우가 진행하는 이벤트의 고객 만족도는 일반 진행 대비 <strong>43%</strong> 높은 것으로 나타났다. 특히 재방문율에서 2.1배의 차이를 보이며, 이는 단순한 분위기 연출을 넘어 <strong>체계적인 멘트, 타이밍, 상황 대처 능력</strong>이 직결된 결과다.</p>
+
+                <div class="stat-grid">
+                    <div class="stat-item">
+                        <div class="number">43%</div>
+                        <div class="label">고객 만족도 향상</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="number">2.1x</div>
+                        <div class="label">재방문율 증가</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="number">10+</div>
+                        <div class="label">년 경력 전문 성우</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="number">98%</div>
+                        <div class="label">이벤트 성공률</div>
+                    </div>
+                </div>
+
+                <h2>화곡 셔츠룸만의 3단계 시스템</h2>
+                <p>마포 성우이벤트는 단순히 인력을 배치하는 것이 아니다. 10년 간 축적된 노하우를 바탕으로 한 <strong>3단계 품질 관리 시스템</strong>을 운영한다.</p>
+                <ol>
+                    <li><strong>사전 컨설팅</strong> — 고객의 니즈와 현장 분위기를 분석하여 최적의 성우 매칭. 30분 이상의 면담을 통해 성향, 스타일, 진행 방향을 구체화한다.</li>
+                    <li><strong>리허설 및 대본 구성</strong> — 실제 이벤트 전 2회 이상의 리허설을 통해 타이밍과 멘트를 정교하게 조율. 돌발 상황에 대한 시나리오도 사전 준비한다.</li>
+                    <li><strong>실시간 모니터링 및 피드백</strong> — 진행 중에도 현장 매니저가 모니터링하며, 고객 반응에 따라 즉각적인 조정이 이루어진다. 종료 후 24시간 내 상세 피드백을 제공한다.</li>
+                </ol>
+
+                <div class="highlight-box">
+                    <p><strong>실제 사례:</strong> 2024년 11월, 화곡동 소재 A업체에서 진행된 이벤트. 사전 컨설팅에서 고객이 원하는 '차분하면서도 위트 있는 분위기'를 정확히 파악, 35세 여성 성우를 매칭. 리허설 3회를 거쳐 당일 만족도 조사에서 9.8/10점을 기록, 이후 3개월 간 5회 추가 예약이 이어졌다.</p>
+                </div>
+
+                <h2>가격 대비 가치 — 합리적 비용의 비밀</h2>
+                <p>많은 고객이 '전문 성우 진행' 하면 높은 비용을 떠올린다. 하지만 화곡 셔츠룸 마포 성우이벤트는 <strong>규모의 경제와 장기 계약 시스템</strong>을 통해 합리적인 가격을 유지한다. 2024년 기준, 당사 성우 진행 이벤트의 평균 단가는 업계 평균 대비 18% 낮으면서도, 고객 유지율은 34% 높다.</p>
+                <ul>
+                    <li>기본 패키지: 2시간 기준 25만원~ (성우 1인, 기본 장비 포함)</li>
+                    <li>프리미엄 패키지: 3시간 기준 40만원~ (성우 2인, 고급 음향, 맞춤 대본)</li>
+                    <li>VIP 맞춤형: 시간 협의, 50만원~ (전담 매니저, 차량 서비스, 사전 미팅 2회)</li>
+                </ul>
+                <p>모든 가격에는 부가세가 포함되어 있으며, 정기 고객 또는 장기 계약 시 추가 할인이 적용된다. 010-6279-0862로 문의하면 30분 무료 상담이 제공된다.</p>
+
+                <h2>자주 묻는 질문 (FAQ)</h2>
+                <div class="faq-item">
+                    <h4>Q. 성우는 모두 여성인가요?</h4>
+                    <p>아닙니다. 당사는 남녀 성
+</body>
+</html>

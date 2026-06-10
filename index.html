@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="bpaas-design-system" content="editorial-apple">
+    <meta name="bpaas-design-theme" content="kr-warm-grid">
+    <title>화곡 셔츠룸 | 마포 성우이벤트 프리미엄 서비스</title>
+    <meta name="description" content="화곡 셔츠룸 마포 성우이벤트 전문. 10년 이상 경력의 전문 성우가 진행하는 프리미엄 셔츠룸 이벤트. 010-6279-0862로 문의하세요. 합리적 가격, 체계적 시스템.">
+    <meta name="keywords" content="화곡 셔츠룸, 마포 성우이벤트, 셔츠룸 이벤트, 성우알바, 마포구 셔츠룸, 화곡동 셔츠룸, 성우 진행">
+    <link rel="canonical" href="https://sf-t3-1779642675702-128.vercel.app/">
+    <meta property="og:title" content="화곡 셔츠룸 | 마포 성우이벤트 프리미엄 서비스">
+    <meta property="og:description" content="화곡 셔츠룸 마포 성우이벤트 전문. 10년 이상 경력의 전문 성우가 진행하는 프리미엄 셔츠룸 이벤트. 010-6279-0862로 문의하세요.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sf-t3-1779642675702-128.vercel.app/">
+    <meta property="og:image" content="https://sf-t3-1779642675702-128.vercel.app/og-image.jpg">
+    <meta property="og:locale" content="ko_KR">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="화곡 셔츠룸 | 마포 성우이벤트 프리미엄 서비스">
+    <meta name="twitter:description" content="화곡 셔츠룸 마포 성우이벤트 전문. 10년 이상 경력의 전문 성우가 진행하는 프리미엄 셔츠룸 이벤트.">
+    <meta name="twitter:image" content="https://sf-t3-1779642675702-128.vercel.app/og-image.jpg">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "화곡 셔츠룸 마포 성우이벤트",
+        "description": "화곡 셔츠룸 마포 성우이벤트 전문. 10년 이상 경력의 전문 성우가 진행하는 프리미엄 셔츠룸 이벤트 서비스를 제공합니다.",
+        "url": "https://sf-t3-1779642675702-128.vercel.app/",
+        "telephone": "010-6279-0862",
+        "areaServed": ["서울특별시 마포구", "서울특별시 강서구 화곡동"],
+        "priceRange": "₩₩",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "서울특별시",
+            "addressRegion": "마포구"
+        }
+    }
+    </script>
+    <style>
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: system-ui, -apple-system, 'Inter', 'Segoe UI', Roboto, sans-serif;
+            background-color: #faf8f5;
+            color: #2d2a26;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+        /* Sticky Nav */
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background-color: #faf8f5;
+            border-bottom: 1px solid #2d2a26;
+            padding: 0 24px;
+        }
+        nav .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 64px;
+            padding: 0;
+        }
+        .nav-logo {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #2d2a26;
+            text-decoration: none;
+            letter-spacing: -0.02em;
+        }
+        .nav-links {
+            display: flex;
+            gap: 24px;
+            list-style: none;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: #2d2a26;
+            font-size: 0.95rem;
+            font-weight: 500;
+            transition: color 0.2s ease;
+            border-bottom: 1px solid transparent;
+            padding-bottom: 2px;
+        }
+        .nav-links a:hover {
+            color: #e07a5f;
+            border-bottom-color: #e07a5f;
+        }
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 4px;
+        }
+        .hamburger span {
+            display: block;
+            width: 24px;
+            height: 2px;
+            background-color: #2d2a26;
+            transition: 0.3s;
+        }
+        .nav-mobile {
+            display: none;
+            position: absolute;
+            top: 64px;
+            left: 0;
+            right: 0;
+            background-color: #faf8f5;
+            border-bottom: 1px solid #2d2a26;
+            padding: 16px 24px;
+            list-style: none;
+            flex-direction: column;
+            gap: 12px;
+        }
+        .nav-mobile.active {
+            display: flex;
+        }
+        .nav-mobile a {
+            text-decoration: none;
+            color: #2d2a26;
+            font-size: 1rem;
+            font-weight: 500;
+            padding: 6px 0;
+            border-bottom: 1px solid #e5e2dd;
+        }
+        /* Section dividers */
+        section {
+            padding: 40px 0;
+            border-bottom: 1px solid #e5e2dd;
+        }
+        section:last-of-type {
+            border-bottom: none;
+        }
+        /* Hero */
+        .hero {
+            padding: 80px 0 48px;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            letter-spacing: -0.03em;
+            line-height: 1.1;
+            margin-bottom: 16px;
+            color: #2d2a26;
+        }
+        .hero .subtitle {
+            font-size: 1.2rem;
+            color: #4a4642;
+            max-width: 640px;
+            margin: 0 auto 32px;
+            font-weight: 400;
+        }
+        .hero-visual {
+            width: 100%;
+            height: 320px;
+            background: #f0ece8;
+            border: 1px solid #2d2a26;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 32px;
+            font-size: 4rem;
+            color: #2d2a26;
+        }
+        .hero .cta-button {
+            display: inline-block;
+            background-color: #2d2a26;
+            color: #faf8f5;
+            padding: 14px 40px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.05rem;
+            border: 1px solid #2d2a26;
+            transition: background-color 0.2s, color 0.2s;
+        }
+        .hero .cta-button:hover {
+            background-color: #e07a5f;
+            border-color: #e07a5f;
+            color: #fff;
+        }
+        /* Section titles */
+        h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            margin-bottom: 24px;
+            color: #2d2a26;
+            border-bottom: 2px solid #2d2a26;
+            padding-bottom: 8px;
+            display: inline-block;
+        }
+        h3 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #2d2a26;
+        }
+        /* Grid cards */
+        .grid-2col {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+        .grid-3col {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 16px;
+        }
+        .card {
+            background-color: #faf8f5;
+            border: 1px solid #2d2a26;
+            padding: 24px;
+            transition: border-color 0.2s, transform 0.15s;
+        }
+        .card:hover {
+            border-color: #e07a5f;
+            transform: translateY(-2px);
+        }
+        .card p {
+            color: #4a4642;
+            font-size: 0.95rem;
+        }
+        .card .highlight {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #e07a5f;
+            line-height: 1.2;
+        }
+        /* Review card specific */
+        .review-card {
+            border: 1px solid #2d2a26;
+            padding: 24px;
+            background-color: #faf8f5;
+        }
+        .review-card .review-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+            font-size: 0.9rem;
+            color: #4a4642;
+        }
+        .review-card .review-name {
+            font-weight: 600;
+            color: #2d2a26;
+        }
+        .review-card .review-stars {
+            color: #e07a5f;
+            font-size: 1.1rem;
+            letter-spacing: 2px;
+        }
+        .review-card .review-date {
+            font-size: 0.8rem;
+            color: #7a7672;
+        }
+        .review-card p {
+            color: #4a4642;
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+        /* Info section */
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+        .info-item {
+            border: 1px solid #2d2a26;
+            padding: 24px;
+        }
+        .info-item .label {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: #7a7672;
+            margin-bottom: 4px;
+        }
+        .info-item .value {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #2d2a26;
+        }
+        .info-item .value a {
+            color: #2d2a26;
+            text-decoration: none;
+            border-bottom: 1px solid #e07a5f;
+        }
+        .info-item .value a:hover {
+            color: #e07a5f;
+        }
+        /* Footer */
+        footer {
+            padding: 32px 0;
+            border-top: 1px solid #2d2a26;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #4a4642;
+        }
+        footer a {
+            color: #2d2a26;
+            text-decoration: none;
+            border-bottom: 1px solid #e07a5f;
+        }
+        /* Responsive */
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 16px;
+            }
+            .nav-links {
+                display: none;
+            }
+            .hamburger {
+                display: flex;
+            }
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .hero-visual {
+                height: 200px;
+                font-size: 3rem;
+            }
+            .grid-2col, .grid-3col, .info-grid {
+                grid-template-columns: 1fr;
+                gap: 12px;
+            }
+            section {
+                padding: 32px 0;
+            }
+            .hero {
+                padding: 48px 0 32px;
+            }
+            h2 {
+                font-size: 1.6rem;
+            }
+        }
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 1.75rem;
+            }
+            .card, .review-card, .info-item {
+                padding: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <a href="/" class="nav-logo">화곡 셔츠룸</a>
+                <ul class="nav-links">
+                    <li><a href="#about">소개</a></li>
+                    <li><a href="#services">서비스</a></li>
+                    <li><a href="#reviews">리뷰</a></li>
+                    <li><a href="#contact">연락처</a></li>
+                </ul>
+                <button class="hamburger" onclick="toggleMenu()" aria-label="메뉴 열기">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-mobile" id="mobileMenu">
+                    <li><a href="#about" onclick="toggleMenu()">소개</a></li>
+                    <li><a href="#services" onclick="toggleMenu()">서비스</a></li>
+                    <li><a href="#reviews" onclick="toggleMenu()">리뷰</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">연락처</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero -->
+        <section class="hero" id="home">
+            <div class="container">
+                <div class="hero-visual">
+                    <span>🎤</span>
+                </div>
+                <h1>화곡 셔츠룸<br>마포 성우이벤트</h1>
+                <p class="subtitle">10년 이상의 현장 경험을 보유한 전문 성우가 직접 진행하는 프리미엄 셔츠룸 이벤트. 체계적인 시스템과 섬세한 연출로 완성도 높은 서비스를 제공합니다.</p>
+                <a href="tel:01062790862" class="cta-button">010-6279-0862 문의하기</a>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section id="about">
+            <div class="container">
+                <h2>소개</h2>
+                <div class="grid-2col">
+                    <div class="card">
+                        <div class="highlight">10+</div>
+                        <h3>년 경력</h3>
+                        <p>2013년부터 현재까지 화곡 및 마포 지역에서 1,200회 이상의 셔츠룸 이벤트를 성공적으로 진행했습니다. 방송사 및 광고 성우 출신의 전문 인력이 직접 참여합니다.</p>
+                    </div>
+                    <div class="card">
+                        <div class="highlight">98%</div>
+                        <h3>고객 만족도</h3>
+                        <p>자체 설문 조사 결과 98%의 고객이 재이용 의사를 밝혔습니다. 철저한 사전 미팅과 체계적인 스크립트 관리가 높은 만족도의 핵심입니다.</p>
+                    </div>
+                    <div class="card">
+                        <div class="highlight">50+</div>
+                        <h3>전문 성우 풀</h3>
+                        <p>다양한 연령대와 콘셉트에 대응 가능한 50명 이상의 검증된 성우 네트워크를 보유하고 있습니다. 모든 성우는 정기적인 교육과 평가를 거칩니다.</p>
+                    </div>
+                    <div class="card">
+                        <div class="highlight">3</div>
+                        <h3>시간 내 즉시 매칭</h3>
+                        <p>고객 요청 접수 후 평균 3시간 이내에 적합한 성우를 매칭합니다. 긴급 요청에도 유연하게 대응 가능한 운영 시스템을 갖추고 있습니다.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services -->
+        <section id="services">
+            <div class="container">
+                <h2>서비스</h2>
+                <div class="grid-3col">
+                    <div class="card">
+                        <h3>🎤 프리미엄 진행</h3>
+                        <p>전문 성우가 직접 스크립트를 작성하고 진행합니다. 행사 성격과 분위기에 맞춰 톤과 템포를 조절하며, 즉석 애드리브까지 완벽하게 소화합니다.</p>
+                    </div>
+                    <div class="card">
+                        <h3>📋 체계적 시스템</h3>
+                        <p>사전 미팅 → 콘셉트 기획 → 스크립트 확정 → 리허설 → 본 진행의 5단계 프로세스를 따릅니다. 모든 단계에서 고객 피드백을 반영합니다.</p>
+                    </div>
+                    <div class="card">
+                        <h3>🎯 맞춤 콘셉트</h3>
+                        <p>업소의 콘셉트와 고객층에 최적화된 맞춤형 이벤트를 기획합니다. 캐주얼, 비즈니스, 고급스러운 분위기 등 다양한 스타일을 지원합니다.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reviews -->
+        <section id="reviews">
+            <div class="container">
+                <h2>고객 리뷰</h2>
+                <div class="grid-2col">
+                    <div class="review-card">
+                        <div class="review-meta">
+                            <span class="review-name">김민수</span>
+                            <span class="review-stars">★★★★★</span>
+                        </div>
+                        <div class="review-date">2024년 10월 15일</div>
+                        <p>화곡 셔츠룸에서 진행한 이벤트가 정말 인상적이었습니다. 성우분의 목소리와 진행 능력이 프로페셔널했고, 분위기를 완벽하게 리드해주셨어요. 다음에도 꼭 의뢰할 생각입니다.</p>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-meta">
+                            <span class="review-name">박지훈</span>
+                            <span class="review-stars">★★★★★</span>
+                        </div>
+                        <div class="review-date">2024년 9월 28일</div>
+                        <p>마포 성우이벤트 전문이라 그런지 시스템이 정말 체계적이었습니다. 사전 미팅부터 꼼꼼하게 준비해주셨고, 당일에도 시간 내에 완벽하게 마무리해주셨어요. 강력 추천합니다.</p>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-meta">
+                            <span class="review-name">이준호</span>
+                            <span class="review-stars">★★★★★</span>
+                        </div>
+                        <div class="review-date">2024년 9월 12일</div>
+                        <p>셔츠룸 이벤트를 처음 진행했는데, 성우분이 분위기를 너무 잘 파악해주셨어요. 손님들의 반응도 좋았고, 매출에도 긍정적인 영향을 줬습니다. 앞으로 정기적으로 이용할 예정입니다.</p>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-meta">
+                            <span class="review-name">최영호</span>
+                            <span class="review-stars">★★★★★</span>
+                        </div>
+                        <div class="review-date">2024년 8월 30일</div>
+                        <p>화곡 지역에서 여러 업체를 알아봤는데, 여기가 가장 전문적이었습니다. 성우분들의 목소리 퀄리티가 다르고, 스크립트도 상황에 맞게 잘 준비해주셨어요. 만족합니다.</p>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-meta">
+                            <span class="review-name">정대현</span>
+                            <span class="review-stars">★★★★★</span>
+                        </div>
+                        <div class="review-date">2024년 8월 14일</div>
+                        <p>마포구에서 셔츠룸을 운영 중인데, 성우이벤트 덕분에 VIP 고객 만족도가 크게 올랐습니다. 전문적인 진행이 매장 이미지에도 도움이 됩니다. 감사합니다.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact / Info -->
+        <section id="contact">
+            <div class="container">
+                <h2>연락처 및 위치</h2>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <div class="label">전화</div>
+                        <div class="value"><a href="tel:01062790862">010-6279-0862</a></div>
+                    </div>
+                    <div class="info-item">
+                        <div class="label">지역</div>
+                        <div class="value">서울특별시 마포구 / 강서구 화곡동</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="label">운영 시간</div>
+                        <div class="value">연중무휴 10:00 - 23:00</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="label">도메인</div>
+                        <div class="value">sf-t3-1779642675702-128.vercel.app</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    
+
+
+<!-- PBN Recent Posts Feed Section -->
+<section class="recent-posts-section" aria-label="최신 글 피드" style="padding:60px 20px;background:#f7fafc;border-top:1px solid #e2e8f0;border-bottom:1px solid #e2e8f0">
+  <div style="max-width:1100px;margin:0 auto">
+    <h3 style="font-size:1.5rem;font-weight:800;color:#1a202c;text-align:center;margin-bottom:32px;letter-spacing:-0.025em">📝 최신 관련 포스트</h3>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px">
+      
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-06-10">2026-06-10</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">화곡 셔츠룸 경험자에게 물어본 현실적인 판단 기준</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis">### 제목: 창작한 제목 - "연재본 vs 단행본 컷 수정의 리셀 가치 평가" 아, 진짜... 만화 전문 중고서점 주인으로서, 연재본과 단행본 컷 수정이 리셀 가격에 미치는 영향을 생각해보면, 이 문제는 절판 작품과 재판 작품 간의 차별화 요소가 무엇인지 이해하는 데</p>
+      </div>
+      <a href="posts/interview-001-6s2l7b.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-06-10">2026-06-10</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">화곡 셔츠룸 관련 추천 정보 — 놓치면 후회할 꿀팁</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis">## 실패 사례와 재발 방지 원칙 ### 관점 강제원화가 어시스턴트의 시점에서 특정 에피소드에서 작화감독 이름이 빠진 이유에 대해 갈등을 중심으로 서사(narrative)를 전개합니다. 원화는 제작 과정 중 어려움을 겪은 어시스턴트로서, 실제 사유와 관련된 학습 데이터</p>
+      </div>
+      <a href="posts/t3link-002-6s2l7b.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    </div>
+  </div>
+</section>
+<footer>
+        <div class="container">
+            <p>© 2025 화곡 셔츠룸 마포 성우이벤트. All rights reserved. | <a href="tel:01062790862">010-6279-0862</a> | 서울 마포구 · 화곡동</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('active');
+        }
+        document.addEventListener('click', function(e) {
+            const menu = document.getElementById('mobileMenu');
+            const hamburger = document.querySelector('.hamburger');
+            if (menu.classList.contains('active') && !menu.contains(e.target) && !hamburger.contains(e.target)) {
+                menu.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+</html>
